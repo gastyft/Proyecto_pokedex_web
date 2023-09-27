@@ -9,24 +9,20 @@ using System.Web.UI.WebControls;
 
 namespace ProyectoPokedex
 {
-    public partial class _Default : Page
+    public partial class VerDetalle : System.Web.UI.Page
     {
         public List<Pokemon> ListaPokemon { get; set; }
+        
+        public Pokemon poke { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             PokemonNegocio negocio = new PokemonNegocio();
             ListaPokemon = negocio.listarConSP();
 
-            if (!IsPostBack)
-            {
-                Repetidor.DataSource = ListaPokemon;
-                Repetidor.DataBind();
-            }
-        }
+            
 
-        protected void btnEjemplo_Click(object sender, EventArgs e)
-        {
-            string valor = ((Button)sender).CommandArgument;
+        }
+            
+            
         }
     }
-}

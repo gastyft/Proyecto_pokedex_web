@@ -5,11 +5,13 @@
     <main>
 
 
-        <asp:GridView ID="dgvPokemon" runat="server" CssClass="table" AutoGenerateColumns="false">
+        <asp:GridView ID="dgvPokemon" runat="server" CssClass="table" AutoGenerateColumns="false"  >
         <Columns>
-        <asp:BoundField  HeaderText="Nombre" DataField="Nombre" />
-        <asp:BoundField HeaderText="Tipo" DataField="Tipo.Descripcion" />
-            <asp:BoundField HeaderText="Debilidad" DataField="Debilidad" />
+         
+        <asp:BoundField  HeaderText="Nombre" DataField="Nombre"  HeaderStyle-BackColor="Aqua"/>
+            <asp:BoundField HeaderText="Descripcion" DataField="Descripcion" HeaderStyle-BackColor="Aqua"  />
+        <asp:BoundField HeaderText="Tipo" DataField="Tipo.Descripcion" HeaderStyle-BackColor="Aqua" />
+            <asp:BoundField HeaderText="Debilidad" DataField="Debilidad" HeaderStyle-BackColor="Aqua" />
             </Columns>
             </asp:GridView>
     </main>
