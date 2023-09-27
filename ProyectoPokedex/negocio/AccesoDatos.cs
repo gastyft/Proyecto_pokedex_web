@@ -22,7 +22,8 @@ namespace negocio
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection(ConfigurationManager.AppSettings["cadenaConexion"]);
+            //Se accede mediante archivo web.config -> AppSetting <add key="cadenaConexion ......> 
+            conexion = new SqlConnection(ConfigurationManager.AppSettings["cadenaConexion"]); 
             comando = new SqlCommand();
         }
 
