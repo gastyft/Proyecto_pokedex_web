@@ -17,8 +17,8 @@
                     <div class="card-body">
                         <h5 class="card-title"><%#Eval("Nombre") %></h5>
                         <p class="card-text"><%#Eval("Descripcion") %></p>
-                        <a class="btn btn-info" href="DetallePokemon.aspx?id=<%#Eval("Id") %>">Ver Detalle</a>
-                        <asp:button text="Ejemplo" cssclass="btn btn-primary" runat="server" id="btnEjemplo" CommandArgument='<%#Eval("Id") %>' CommandName="PokemonId" OnClick="btnEjemplo_Click"/>
+                        <a class="btn btn-info" href="VerDetalle.aspx?id=<%#Eval("Id") %>">Ver Detalle</a>
+  <!-- BOTON EJEMPLO CON ASP   <asp:button text="Ejemplo" cssclass="btn btn-primary" runat="server" id="btnEjemplo" CommandArgument='<%#Eval("Id") %>' CommandName="PokemonId" OnClick="btnEjemplo_Click"/> -->
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ namespace ProyectoPokedex
         {
             PokemonNegocio negocio = new PokemonNegocio();
             ListaPokemon = negocio.listarConSP();
-
+            
             if (!IsPostBack)
             {
                 Repetidor.DataSource = ListaPokemon;
